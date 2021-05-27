@@ -65,10 +65,11 @@
 
 .header__navbar-icon {
   font-size: 1.8rem;
-  margin: 0 6px;
+  margin: 0 4px;
 }
 
 .header__navbar-title--no-pointer{
   cursor: text;
   color: #fff;
 }
+
