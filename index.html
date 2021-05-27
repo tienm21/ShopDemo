@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Tiến</title>
-    <link rel="icon" href="./assets/img/icon.jpg">
+    <title>Web Coded By Tiến</title>
+    <link rel="icon" href="./assets/img/icon.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -21,7 +21,6 @@
     />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    
   </head>
 
   <body>
@@ -30,16 +29,33 @@
         <div class="grid">
           <nav class="header__navbar">
             <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item-separate">
+              <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate">
                 Vào cửa hàng trên ứng dụng
+                <!-- Header QR -->
+                <div class="header__qr">
+                  <img src="./assets/img/QR.png" alt="QR Code" class="header__qr-img">
+                  <div class="header__qr-apps">
+                    <a href="https://shopee.vn/web" target="_blank" class="header__qr-link">
+                      <img src="./assets/img/GooglePlay.png" alt="" class="header__qr-dowload-img">
+                    </a>
+                    <a href="https://shopee.vn/web" target="_blank" class="header__qr-link">
+                      <img src="./assets/img/AppStore.png"  alt="" class="header__qr-dowload-img">
+                    </a>
+                  </div>
+                </div>
               </li>
-              <li class="header__navbar-item"><span class="header__navbar-title--no-pointer">Kết Nối</span>
-                <a href="https://www.facebook.com/tien.khong.14811692" target="_blank" class="header__navbar-icon-link">
-                <i class="header__navbar-icon fab fa-facebook"></i>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer">Kết Nối</span>
+                <a
+                  href="https://www.facebook.com/tien.khong.14811692"
+                  target="_blank"
+                  class="header__navbar-icon-link"
+                >
+                  <i class="header__navbar-icon fab fa-facebook"></i>
                 </a>
                 <a href="" class="header__navbar-icon-link">
                   <i class="header__navbar-icon fab fa-instagram"></i>
-                  </a>
+                </a>
               </li>
             </ul>
 
@@ -47,14 +63,22 @@
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link">
                   <i class="header__navbar-icon fas fa-bell"></i>
-                  Thông báo</a>
+                  Thông báo</a
+                >
               </li>
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link">
                   <i class="header__navbar-icon far fa-question-circle"></i>
-                  Trợ giúp</a>
+                  Trợ giúp</a
+                >
               </li>
-              <li class="header__navbar-item header__navbar-item--strong header__navbar-item-separate">
+              <li
+                class="
+                  header__navbar-item
+                  header__navbar-item--strong
+                  header__navbar-item-separate
+                "
+              >
                 Đăng ký
               </li>
               <li class="header__navbar-item header__navbar-item--strong">
