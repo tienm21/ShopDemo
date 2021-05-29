@@ -1,97 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Coded By Tiến</title>
-    <link rel="icon" href="./assets/img/icon.jpg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
 
-  <body>
-    <div class="app">
-      <header class="header">
-        <div class="grid">
-          <nav class="header__navbar">
-            <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate">
-                Vào cửa hàng trên ứng dụng
-                <!-- Header QR -->
-                <div class="header__qr">
-                  <img src="./assets/img/QR.png" alt="QR Code" class="header__qr-img">
-                  <div class="header__qr-apps">
-                    <a href="https://shopee.vn/web" target="_blank" class="header__qr-link">
-                      <img src="./assets/img/GooglePlay.png" alt="" class="header__qr-dowload-img">
-                    </a>
-                    <a href="https://shopee.vn/web" target="_blank" class="header__qr-link">
-                      <img src="./assets/img/AppStore.png"  alt="" class="header__qr-dowload-img">
-                    </a>
-                  </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Coded By Tiến</title>
+  <link rel="icon" href="./assets/img/icon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="grid">
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate">
+              Vào cửa hàng trên ứng dụng
+              <!-- Header QR -->
+              <div class="header__qr">
+                <img src="./assets/img/QR.png" alt="QR Code" class="header__qr-img" />
+                <div class="header__qr-apps">
+                  <a href="https://shopee.vn/web" target="_blank" class="header__qr-link">
+                    <img src="./assets/img/GooglePlay.png" alt="" class="header__qr-dowload-img" />
+                  </a>
+                  <a href="https://shopee.vn/web" target="_blank" class="header__qr-link">
+                    <img src="./assets/img/AppStore.png" alt="" class="header__qr-dowload-img" />
+                  </a>
                 </div>
-              </li>
-              <li class="header__navbar-item">
-                <span class="header__navbar-title--no-pointer">Kết Nối</span>
-                <a
-                  href="https://www.facebook.com/tien.khong.14811692"
-                  target="_blank"
-                  class="header__navbar-icon-link"
-                >
-                  <i class="header__navbar-icon fab fa-facebook"></i>
-                </a>
-                <a href="" class="header__navbar-icon-link">
-                  <i class="header__navbar-icon fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+              </div>
+            </li>
+            <li class="header__navbar-item">
+              <span class="header__navbar-title--no-pointer">Kết Nối</span>
+              <a href="https://www.facebook.com/tien.khong.14811692" target="_blank" class="header__navbar-icon-link">
+                <i class="header__navbar-icon fab fa-facebook"></i>
+              </a>
+              <a href="" class="header__navbar-icon-link">
+                <i class="header__navbar-icon fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
 
-            <ul class="header__navbar-list">
-              <li class="header__navbar-item">
-                <a href="" class="header__navbar-item-link">
-                  <i class="header__navbar-icon fas fa-bell"></i>
-                  Thông báo</a
-                >
-              </li>
-              <li class="header__navbar-item">
-                <a href="" class="header__navbar-item-link">
-                  <i class="header__navbar-icon far fa-question-circle"></i>
-                  Trợ giúp</a
-                >
-              </li>
-              <li
-                class="
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-item--has-notify">
+              <a href="" class="header__navbar-item-link">
+                <i class="header__navbar-icon fas fa-bell"></i>
+                Thông báo
+              </a>
+              <!-- Notification -->
+              <div class="header__notify">
+                <header class="header__notify-header">
+                  <h3>Thông báo mới nhận</h3>
+                </header>
+                <ul class="header__notify-list">
+                  <li class="header__notify-item header__notify-item--readed">
+                    <a href="#" class="header__notify-link">
+                      <img src="./assets/img/images.png" alt="" class="header__notify-img" />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                        <span class="header__notify-description">Mô tả của mỹ phẩm</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="#" class="header__notify-link">
+                      <img src="./assets/img/images.png" alt="" class="header__notify-img" />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                        <span class="header__notify-description">Mô tả của mỹ phẩm</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="#" class="header__notify-link">
+                      <img src="./assets/img/images.png" alt="" class="header__notify-img" />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Bộ sản phẩm gồm 01 băng nhung dễ sử dụng, thuận
+                          tiện điều chỉnh kích thước của băng đô</span>
+                        <span class="header__notify-description">Mô tả của mỹ phẩm</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="#" class="header__notify-link">
+                      <img src="./assets/img/images.png" alt="" class="header__notify-img" />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                        <span class="header__notify-description">Mô tả của mỹ phẩm</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="#" class="header__notify-link">
+                      <img src="./assets/img/images.png" alt="" class="header__notify-img" />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Siêu đẹp màu sắc tươi đẹp và chất liệu nhựa PP cao
+                          cấp sang trọng và bền bĩ
+                        </span>
+                        <span class="header__notify-description">Mô tả của mỹ phẩm</span>
+                      </div>
+                    </a>
+                  </li>
+                  <div class="header__notify-footer">
+                    <a href="#" class="header__notify-footer-btn">Xem tất cả</a>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li class="header__navbar-item">
+              <a href="" class="header__navbar-item-link">
+                <i class="header__navbar-icon far fa-question-circle"></i>
+                Trợ giúp</a>
+            </li>
+            <li class="
                   header__navbar-item
                   header__navbar-item--strong
                   header__navbar-item-separate
-                "
-              >
-                Đăng ký
-              </li>
-              <li class="header__navbar-item header__navbar-item--strong">
-                Đăng nhập
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!--  -->
-      <div class="container"></div>
-      <!-- Footer -->
-      <footer class="footer"></footer>
-    </div>
-  </body>
+                ">
+              Đăng ký
+            </li>
+            <li class="header__navbar-item header__navbar-item--strong">
+              Đăng nhập
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  -->
+    <div class="container"></div>
+    <!-- Footer -->
+    <footer class="footer"></footer>
+  </div>
+</body>
+
 </html>
