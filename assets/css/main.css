@@ -391,7 +391,7 @@
   height: 40px;
   flex: 1;
   background: var(--white-color);
-  border-radius: 3px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
 }
@@ -407,15 +407,21 @@
   margin-top: 3px;
 }
 
+.header__search-input-wrap {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
 .header__search-input {
   outline: none;
   border: none;
+  width: 100%;
   height: 100%;
-  flex: 1;
   color: var(--text-color);
   padding: 0 16px;
   font-size: 1.4rem;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .header__search-select {
@@ -443,7 +449,7 @@
   border: none;
   height: 34px;
   width: 50px;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-right: 3px;
   outline: none;
 }
@@ -470,7 +476,7 @@
   list-style: none;
   box-shadow: 0 0 3px #ccc;
   padding-left: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   display: none;
   animation: fadeIn ease-in 0.2s;
 
@@ -490,7 +496,7 @@
 .header__search-option-item {
   background-color: var(--white-color);
   padding: 8px 8px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .header__search-option-item:hover {
@@ -513,4 +519,54 @@
 
 .header__search-option-item--active i {
   display: inline-block;
+}
+
+.header__search-input:focus ~ .header__search-history {
+  display: block;
+}
+/* Search history */
+.header__search-history {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: calc(100% - 16px);
+  background-color: var(--white-color);
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgb(207, 201, 201);
+  display: none;
+}
+
+.header__search-history-heading {
+  margin: 6px 12px;
+  padding-top: 3px;
+  font-size: 1.4rem;
+  color: rgb(185, 191, 196);
+  font-weight: 400;
+}
+
+.header__search-history-list {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.header__search-history-list-item {
+  height: 38px;
+  padding: 0 12px;
+}
+
+.header__search-history-list-item:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header__search-history-list-item:hover {
+  background-color: #f7f7f7;
+}
+
+.header__search-history-list-item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  line-height: 38px;
 }
